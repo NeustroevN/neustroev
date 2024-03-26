@@ -1,0 +1,523 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+/* p {
+	line-height: 1.65em;
+} */
+
+wm {
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+
+	/* -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	/* -webkit-animation-duration: 4s; Safari 4.0 - 8.0 */ 
+	animation-name: logotxt;
+	animation-duration: 2s;
+}
+ 
+wx {
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	animation-name: logotxt;
+	animation-duration: 2s;
+	animation-delay: 1s;
+}
+ws {
+	/*font-weight: bold;*/
+	text-align: center;
+	/*line-height: 0em;*/
+	line-height: 1em;
+	margin-right: 60px;  
+	color: white;
+	font-size: 6px;
+
+	animation-name: logotxt;
+	animation-duration: 2s; 
+	animation-delay: 2s;
+}
+
+@keyframes logotxt {
+	0% {
+		font-size: 25px;
+	}
+	25% {
+		font-size: 20px;
+	}
+	50% {
+		font-size: 17px;
+	}
+	75% {
+		font-size: 15px;
+	}
+	100% {
+		font-size: 15px;
+	}
+}
+
+#TitleInfoAnimation{
+	animation-name: TitleAnime;
+	animation-duration: 3s; 
+	animation-iteration-count: 3;  /*Выполнение анимации 3 раза*/
+}
+
+#TitleFormAnimation{
+	animation-name: TitleAnime;
+	animation-duration: 3s;
+	animation-iteration-count: infinite; /*Бесконечное выполнение анимации*/
+}
+
+@keyframes TitleAnime {
+	from {
+		font-size: 12px;
+	}
+
+	to {
+		font-size: 15px;
+	}
+
+}
+
+
+Blt{
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;	
+}
+
+Bls{
+
+	text-align: center;
+	font-size: 8px;	
+}
+
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.Head {
+	height: 35%;
+	background-color:rgb(89, 166, 246);
+	/* border: 1px solid black; */
+
+}
+
+.Info{
+	height: 27%;
+	/* border: 1px solid black; */
+	background-color:white;
+}
+
+.Form{
+	height: 35%;
+	/* border: 1px solid black; */
+	background-color:azure;
+}
+
+.Footer{
+	height: 8%;
+	/* border: 1px solid black; */
+	background-color:rgb(39, 129, 204);
+}
+
+.DataContainer {
+	display: flex;
+
+	height: 100%;
+	width: 60%;
+	margin: auto; /*Выравнивание блоков по центру*/
+	/* border: 1px solid black; */
+}
+
+.InfoContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.InfoTitle{
+	width: auto;
+	height: 30%;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+.InfoBlocks{
+	display: flex;
+	flex-direction:  row;  /* слева-направо  */
+	width: 100%;
+	height: 70%;
+	/*margin: center; */
+	/* border: 1px solid black; */
+	align-items: center;
+	justify-content: center;
+}
+
+.Block{
+	width: 30%;
+	height: auto;
+	text-align: center;
+	/* border: 1px solid black; */
+	transition-duration: 1s;
+}
+
+.Block:hover{
+  	width: 50%;
+	height: 200px;
+	background: rgb(142, 222, 85);
+}
+
+
+.BlockImg{
+	height: 40%;
+	width: auto;
+	float:none;
+}
+
+
+.Head_L{
+	/*height: 100%;*/
+	width: 40%;
+	/* border: 1px solid black; */
+	margin-left: 20px;      /* Отступ слева в пикселах */
+}
+
+
+
+
+.Head_R{
+	/*height: 100%;*/
+	width: 60%;
+	/* border: 1px solid black; */
+	margin-Top: 2%;
+	margin-right: 2%;
+	
+	
+	animation: backInLeft; 		
+	animation-duration: 0.5s; 
+	animation-delay: 1s;
+}
+
+.HeadImg{
+	height: 80%;
+	width: auto;
+	float:right;
+}
+
+.logo{
+	width: 30%;
+	height: auto;	
+	
+	animation: wobble; 		
+	animation-duration: 2s; 
+	animation-delay: 1s;
+
+
+}
+
+
+.FormFields{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 5mm;
+}
+
+.SendBtn{
+	background-color: yellow;
+	text-align: center;
+	font-size: 8px;
+	width: 30%;
+	min-width: 150px;
+	height: 20px;
+	border-radius: 5px;
+	transition-duration: 1s;
+}
+
+.SendBtn:hover{
+    background: rgb(214, 124, 20);
+    box-shadow: 0 4px 10px rgb(184, 94, 94);
+    top: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	height: 40px;
+}
+
+.LearnBtn{
+	background-color: yellow;
+	text-align: center;
+	font-size: 8px;
+	height: 20px;
+	border-radius: 5px;
+	/*width: 150px;*/
+	transition-duration: 1s;
+	/* transition: color 2s ease-out 0.5s, width 1s ease 0s; */
+	/* transition-timing-function: ease; */
+	/* transition-timing-function: ease-in; */
+}
+
+.LearnBtn:hover{
+    background: rgb(214, 124, 20);
+    box-shadow: 0 4px 10px rgb(184, 94, 94);
+    top: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	height: 40px;
+}
+
+
+
+
+.Field{
+	/*width: 150px;*/
+	width: 30%;
+	min-width: 150px;
+	text-align: left;
+	font-size: 8px;	
+	color: gray;
+}
+
+.FooterText {
+	/*font-weight: bold;*/
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	font-size: 8px;
+}
+
+
+
+/*Media запросы CSS для адаптации страницы*/
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 1200px) 
+{
+	wm {font-size: 15px;}
+	wx {font-size: 20px;}
+	ws {font-size: 8px;}	
+	
+	.HeadImg{
+		height: 200px;
+		width: auto;
+		margin-bottom: 20px;
+	}
+
+	.LearnBtn{
+		font-size: 20px; 
+		height: 40px;
+		width: 90%;
+		transition-duration: 1s;
+	}
+	
+	.LearnBtn:hover{
+		font-size: 20px;
+		font-weight: bold;
+		height: 40px;
+	}
+
+	.Field{
+		width: 90%;
+		min-width: 90%;
+		height: 40px;
+		font-size: 20px;	
+		
+	} 
+	.SendBtn{
+		font-size: 20px; 
+		height: 40px;
+		width: 90%;
+		transition-duration: 1s;
+	}
+	
+}
+/* Large devices (desktops, 992px and up)*/
+@media screen and (max-width: 992px) 
+{
+	/* wm {font-size: 20px;}
+	wx {font-size: 25px;}
+	ws {font-size: 12px;} */
+	
+	.InfoTitle{
+		width: auto;
+		height: auto;
+	}
+	.InfoBlocks{
+		flex-direction: row;
+		width: auto;
+		height: auto;
+	}
+	.Block{
+		width: 200px;
+		height: 200px;
+	}
+	.Block:hover{
+		width: 200px;
+		height: 200px;
+	}
+	.BlockImg{
+		height: 100px;
+		width: auto;
+	}
+	
+	.HeadImg{
+		height: 200px;
+		width: auto;
+		margin-bottom: 20px;
+	}
+
+	.LearnBtn{
+		font-size: 20px; 
+		height: 40px;
+		width: 90%;
+		transition-duration: 1s;
+	}
+	
+	.LearnBtn:hover{
+		font-size: 20px;
+		font-weight: bold;
+		height: 40px;
+	}
+
+	.Field{
+		width: 90%;
+		min-width: 90%;
+		height: 40px;
+		font-size: 20px;	
+		
+	} 
+	.SendBtn{
+		font-size: 20px; 
+		height: 40px;
+		width: 90%;
+		transition-duration: 1s;
+	}
+	
+    
+}
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) 
+{
+	wm {font-size: 20px;}
+	wx {font-size: 25px;}
+	ws {font-size: 12px;}
+
+	.container {height: auto;}
+	.Head {height: auto;}
+	.Info{height: auto;}
+	.Form{height: auto;} 
+
+	.DataContainer {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		width: auto; 
+		align-items: center;
+		margin-Top: 20px;
+	}
+	.Head_L{
+		width: auto;
+		margin-left: 20px;      /* Отступ слева в пикселах */
+	}
+		
+	.Head_R{
+		width: auto;
+	}
+	
+	.HeadImg{
+		/* height: 200px;
+		width: auto; */
+		height: auto;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+	
+	/* .InfoTitle{
+		width: auto;
+		height: auto;
+	} */
+	.InfoBlocks{
+		flex-direction: column;
+		width: auto;
+		height: auto;
+	}
+	/* .Block{
+		width: 200px;
+		height: 200px;
+	}
+	.Block:hover{
+		width: 200px;
+		height: 200px;
+	}
+	.BlockImg{
+		height: 100px;
+		width: auto;
+	} */
+	
+
+	/* wm {font-size: 20px;}
+	wx {font-size: 25px;}
+	ws {font-size: 12px;} */
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 576px) 
+{
+	
+	.LearnBtn{
+		font-size: 20px; 
+		height: 40px;
+		width: 90%;
+		transition-duration: 1s;
+	}
+	
+	.LearnBtn:hover{
+		font-size: 20px;
+		font-weight: bold;
+		height: 40px;
+	}
+
+	.Field{
+		width: 90%;
+		min-width: 90%;
+		height: 40px;
+		font-size: 20px;	
+		
+	}
+
+	.SendBtn{
+		font-size: 20px; 
+		height: 40px;
+		width: 90%;
+		transition-duration: 1s;
+	}
+
+
+}
+

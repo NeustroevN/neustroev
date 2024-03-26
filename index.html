@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="jsscript.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Заголовок-->
+        <div class="Head">
+        <div class="DataContainer">
+            <div class="Head_L">
+                <img class="logo" src="img/logo.png" alt="logo">
+                <p>
+                   
+                    <wm>С помощью нас вы сможете создать то, что</wm><br>
+                    <wx>желаете!</wx>
+                    <br>
+                    <ws>Наши возможности + опыт помогут вам достичь огромного успеха.
+                        Мы верим в вас! И знаем это на 100%, что вас не остановить!</ws>  
+                                
+                </p> 
+                <form>
+                    <input class="LearnBtn" type="button" name="BtnSend" value="Узнать больше">
+                </form>
+                
+            </div>
+            <div class="Head_R">
+                <!-- <div class="animate__animated animate__bounce"></div> -->
+                <img class="HeadImg" src="img/header-img.png" alt="HeadImg">
+            </div>
+        </div>
+        </div>
+        <!--Информация-->
+        <div class="Info">
+            <div class="DataContainer">
+                <div class="InfoContainer">
+                    <div class="InfoTitle">
+                        <p><h5 id="TitleInfoAnimation">Что вам необходимо</h5></p>
+                    </div>
+                    <div class="InfoBlocks">
+                        <div class="Block"> 
+                            <img class="BlockImg" src="img/f3.png" alt="F3"><br>
+                            <Blt>Первый блок</Blt><br>
+                            <Bls>Loren ipsum dolor sit amet consectetur</Bls>
+                        </div>
+                        <div class="Block"> 
+                            <img class="BlockImg" src="img/f4.png" alt="F4"><br>
+                            <Blt>Второй блок</Blt><br>
+                            <Bls>Loren ipsum dolor sit amet consectetur</Bls>
+                        </div>
+                        <div class="Block"> 
+                            <img class="BlockImg" src="img/f5.png" alt="F5"><br>
+                            <Blt>Третий блок</Blt><br>
+                            <Bls>Loren ipsum dolor sit amet consectetur</Bls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Форма-->
+        <div class="Form">
+            <div class="DataContainer">
+                <div class="FormFields">
+                    <p><h5 id="TitleFormAnimation">Форма заказа обратного звонка</h5></p>
+                    <p> 
+                        <form>
+                            <!-- <input class="Field" type="text" name="Name" value="Имя" required><br> -->
+                            <div>
+                                <input class="Field" id="name" type="text" onblur="checkName();" name="Name" placeholder="Ваше имя" required><br>
+                                <span id="name_Check"></span>
+                            </div>
+                            <!-- <input class="Field" type="email" name="email" value=" test@yandex.ru" required><br> -->
+                            <div>
+                                <input class="Field" id="email" type="text" onblur="checkEmail();" name="email" placeholder="email@yandex.ru" required><br>
+                                <span id="email_Check"></span>
+                            </div>
+                            <!-- <input class="Field" type="tel" name="Tel" value="Телефон"><br> -->
+                            <div>
+                                <input class="Field" id="phone"  type="text"  onblur="checkPhone();" name="Tel" placeholder="+7(xxx) xxx xx-xx" required><br>
+                                <span id="phone_Check"></span>
+                            </div>
+                            <!-- <input class="form-control" id="phone" type="text" onblur="checkPhone();" placeholder="xxx-xxx-xxx" required />
+                            <span id="phone_Check"></span> -->
+
+                            <input class="Field" type="text" name="Interest" value="Какая услуга Вас интересует" required><br>
+                            <!-- <input class="SendBtn" type="submit" name="BtnSend" onclick="outputData();" value="Отправить вопрос"><br> -->
+                            <input class="SendBtn" type="button" name="BtnSend" onclick="outputData();" value="Отправить вопрос"><br>
+                        </form> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Подвал-->
+        <div class="Footer">
+            <div class="DataContainer">
+                <div class="FooterText">
+                   <p>@Все на этом сайте защищено</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+
+
+
+</body>
+</html>
